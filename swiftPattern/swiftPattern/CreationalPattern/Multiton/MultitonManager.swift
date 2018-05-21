@@ -1,17 +1,10 @@
-//
-//  MultitonManager.swift
-//  swiftPattern
-//
-//  Created by ADMIN on 5/21/18.
-//  Copyright © 2018 ADMIN. All rights reserved.
-//
-
 import UIKit
-/*:
- ### NOTES:
- - MULTITON required an dictionary that hold all singleton from our app, to keep it safe in an stack.
- - MULTITON can be implemented as a class or singleton class, it should be choice by you, this example refer to a normal class, but can be change to singleton
- */
+
+/// An example of singleton object
+/// - MULTITON required an dictionary that hold all singleton from our app, to keep it safe in an stack.
+/// - MULTITON can be implemented as a class or singleton class, it should be choice by you, this example refer to a normal class, but can be change to singleton
+///
+
 class MultitonManager: NSObject {
     private var configDictionary:Dictionary<String,Any> = [:]
     /**

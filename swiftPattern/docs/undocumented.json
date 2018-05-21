@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/Singleton/ConfigServerSingleton.swift",
+      "line": 13,
+      "symbol": "ConfigServerSingleton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/Singleton/ConfigSingleton.swift",
+      "line": 13,
+      "symbol": "ConfigSingleton.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/Singleton/ConfigSingleton.swift",
+      "line": 21,
+      "symbol": "ConfigSingleton.setUpApp()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/ViewControllers/MainDemo/DemoViewController.swift",
+      "line": 11,
+      "symbol": "DemoViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/admin/swiftPattern/swiftPattern"
+}
