@@ -3,3 +3,23 @@ github_url: https://github.com/NaNgoPo/swiftPattern
 min_acl: internal
 theme: fullwidth
 skip_undocumented: true
+custom_categories:
+  - name: Creational Patterns - LazyInitialization
+    children:
+    - LazyInitialization
+  - name: Creational Patterns - Singleton
+    children:
+    - ConfigSingleton
+  - name: Creational Patterns - Multiton
+    children:
+    - MultitonManager
+  - name: Creational Patterns - Factory Method
+    children:
+    - CoreFactory
+    - FactoryItem1
+    - FactoryItem2
+    - Factory1
+    - Factory2
+    - FactoryItemBase
+
+    

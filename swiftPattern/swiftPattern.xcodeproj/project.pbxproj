@@ -15,6 +15,13 @@
 		849283BE20B269650085764F /* ConfigSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283BD20B269650085764F /* ConfigSingleton.swift */; };
 		849283C020B26DDE0085764F /* MultitonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283BF20B26DDE0085764F /* MultitonManager.swift */; };
 		849283C220B26FF10085764F /* ConfigServerSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283C120B26FF10085764F /* ConfigServerSingleton.swift */; };
+		849283C420B2A1850085764F /* LazyInitialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283C320B2A1850085764F /* LazyInitialization.swift */; };
+		849283C620B2A42A0085764F /* CoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283C520B2A42A0085764F /* CoreFactory.swift */; };
+		849283D820B2CE7D0085764F /* Factory1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D220B2CE7D0085764F /* Factory1.swift */; };
+		849283D920B2CE7D0085764F /* Factory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D320B2CE7D0085764F /* Factory2.swift */; };
+		849283DA20B2CE7D0085764F /* FactoryItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D520B2CE7D0085764F /* FactoryItem1.swift */; };
+		849283DB20B2CE7D0085764F /* FactoryItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D620B2CE7D0085764F /* FactoryItem2.swift */; };
+		849283DC20B2CE7D0085764F /* FactoryItemBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D720B2CE7D0085764F /* FactoryItemBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		849283BD20B269650085764F /* ConfigSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigSingleton.swift; sourceTree = "<group>"; };
 		849283BF20B26DDE0085764F /* MultitonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitonManager.swift; sourceTree = "<group>"; };
 		849283C120B26FF10085764F /* ConfigServerSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigServerSingleton.swift; sourceTree = "<group>"; };
+		849283C320B2A1850085764F /* LazyInitialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyInitialization.swift; sourceTree = "<group>"; };
+		849283C520B2A42A0085764F /* CoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFactory.swift; sourceTree = "<group>"; };
+		849283D220B2CE7D0085764F /* Factory1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory1.swift; sourceTree = "<group>"; };
+		849283D320B2CE7D0085764F /* Factory2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory2.swift; sourceTree = "<group>"; };
+		849283D520B2CE7D0085764F /* FactoryItem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryItem1.swift; sourceTree = "<group>"; };
+		849283D620B2CE7D0085764F /* FactoryItem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryItem2.swift; sourceTree = "<group>"; };
+		849283D720B2CE7D0085764F /* FactoryItemBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryItemBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +221,9 @@
 		849283A820B262970085764F /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
+				849283D120B2CE7D0085764F /* Factory */,
+				849283D420B2CE7D0085764F /* Object */,
+				849283C520B2A42A0085764F /* CoreFactory.swift */,
 			);
 			path = FactoryMethod;
 			sourceTree = "<group>";
@@ -214,6 +231,7 @@
 		849283A920B262970085764F /* LazyInitialization */ = {
 			isa = PBXGroup;
 			children = (
+				849283C320B2A1850085764F /* LazyInitialization.swift */,
 			);
 			path = LazyInitialization;
 			sourceTree = "<group>";
@@ -337,6 +355,25 @@
 			path = MainDemo;
 			sourceTree = "<group>";
 		};
+		849283D120B2CE7D0085764F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				849283D220B2CE7D0085764F /* Factory1.swift */,
+				849283D320B2CE7D0085764F /* Factory2.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		849283D420B2CE7D0085764F /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				849283D520B2CE7D0085764F /* FactoryItem1.swift */,
+				849283D620B2CE7D0085764F /* FactoryItem2.swift */,
+				849283D720B2CE7D0085764F /* FactoryItemBase.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,9 +447,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				849283BE20B269650085764F /* ConfigSingleton.swift in Sources */,
+				849283D920B2CE7D0085764F /* Factory2.swift in Sources */,
+				849283C420B2A1850085764F /* LazyInitialization.swift in Sources */,
+				849283D820B2CE7D0085764F /* Factory1.swift in Sources */,
+				849283DB20B2CE7D0085764F /* FactoryItem2.swift in Sources */,
+				849283C620B2A42A0085764F /* CoreFactory.swift in Sources */,
 				8492838720B261820085764F /* AppDelegate.swift in Sources */,
 				849283BB20B263EC0085764F /* DemoViewController.swift in Sources */,
+				849283DA20B2CE7D0085764F /* FactoryItem1.swift in Sources */,
 				849283C220B26FF10085764F /* ConfigServerSingleton.swift in Sources */,
+				849283DC20B2CE7D0085764F /* FactoryItemBase.swift in Sources */,
 				849283C020B26DDE0085764F /* MultitonManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
