@@ -8,10 +8,66 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/Multiton/MultitonManager.swift",
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 13,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.navController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
       "line": 15,
-      "symbol": "MultitonManager",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "symbol": "AppDelegate.viewController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 27,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 32,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 37,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 41,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/AppDelegate.swift",
+      "line": 45,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -19,6 +75,20 @@
       "line": 13,
       "symbol": "ConfigServerSingleton",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/Singleton/ConfigServerSingleton.swift",
+      "line": 14,
+      "symbol": "ConfigServerSingleton.sharedInstance",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/Singleton/ConfigServerSingleton.swift",
+      "line": 19,
+      "symbol": "ConfigServerSingleton.getColor()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -40,6 +110,20 @@
       "line": 11,
       "symbol": "DemoViewController",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/ViewControllers/MainDemo/DemoViewController.swift",
+      "line": 13,
+      "symbol": "DemoViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/ViewControllers/MainDemo/DemoViewController.swift",
+      "line": 24,
+      "symbol": "DemoViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],

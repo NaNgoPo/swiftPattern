@@ -3,7 +3,7 @@
 Pattern Implementation in Swift example
 
 ### What is this repository for? ###
-
+**A full document can be found in : http://htmlpreview.github.io/?https://github.com/NaNgoPo/swiftPattern/blob/master/swiftPattern/docs/index.html**
 * Implement swift pattern in example
 * Implement all 23 GoF pattern:<br />
     **Creational Patterns**<br />
