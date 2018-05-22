@@ -9,6 +9,6 @@ class CoreFactory: NSObject {
      - Return: an object that ready to use in our application, in this case it return an base object FactoryItemBase, not the real FactoryItemBase1 nor FactoryItemBase2
      */
     func createObject() -> FactoryItemBase{
-        
+        return FactoryItemBase()
     }
 }

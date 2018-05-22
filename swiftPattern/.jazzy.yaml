@@ -16,10 +16,11 @@ custom_categories:
   - name: Creational Patterns - Factory Method
     children:
     - CoreFactory
-    - FactoryItem1
-    - FactoryItem2
     - Factory1
     - Factory2
     - FactoryItemBase
+    - FactoryItem1
+    - FactoryItem2
+    
 
     
