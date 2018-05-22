@@ -22,6 +22,8 @@
 		849283DA20B2CE7D0085764F /* FactoryItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D520B2CE7D0085764F /* FactoryItem1.swift */; };
 		849283DB20B2CE7D0085764F /* FactoryItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D620B2CE7D0085764F /* FactoryItem2.swift */; };
 		849283DC20B2CE7D0085764F /* FactoryItemBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283D720B2CE7D0085764F /* FactoryItemBase.swift */; };
+		849283DE20B3B9DC0085764F /* ObjectPoolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283DD20B3B9DC0085764F /* ObjectPoolManager.swift */; };
+		849283E020B3BA530085764F /* ObjectPoolItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849283DF20B3BA530085764F /* ObjectPoolItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		849283D520B2CE7D0085764F /* FactoryItem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryItem1.swift; sourceTree = "<group>"; };
 		849283D620B2CE7D0085764F /* FactoryItem2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryItem2.swift; sourceTree = "<group>"; };
 		849283D720B2CE7D0085764F /* FactoryItemBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryItemBase.swift; sourceTree = "<group>"; };
+		849283DD20B3B9DC0085764F /* ObjectPoolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPoolManager.swift; sourceTree = "<group>"; };
+		849283DF20B3BA530085764F /* ObjectPoolItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPoolItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,8 @@
 		849283AB20B262970085764F /* ObjectPool */ = {
 			isa = PBXGroup;
 			children = (
+				849283DD20B3B9DC0085764F /* ObjectPoolManager.swift */,
+				849283DF20B3BA530085764F /* ObjectPoolItem.swift */,
 			);
 			path = ObjectPool;
 			sourceTree = "<group>";
@@ -446,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849283DE20B3B9DC0085764F /* ObjectPoolManager.swift in Sources */,
 				849283BE20B269650085764F /* ConfigSingleton.swift in Sources */,
 				849283D920B2CE7D0085764F /* Factory2.swift in Sources */,
 				849283C420B2A1850085764F /* LazyInitialization.swift in Sources */,
@@ -454,6 +461,7 @@
 				849283C620B2A42A0085764F /* CoreFactory.swift in Sources */,
 				8492838720B261820085764F /* AppDelegate.swift in Sources */,
 				849283BB20B263EC0085764F /* DemoViewController.swift in Sources */,
+				849283E020B3BA530085764F /* ObjectPoolItem.swift in Sources */,
 				849283DA20B2CE7D0085764F /* FactoryItem1.swift in Sources */,
 				849283C220B26FF10085764F /* ConfigServerSingleton.swift in Sources */,
 				849283DC20B2CE7D0085764F /* FactoryItemBase.swift in Sources */,

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CoreFactory Class Reference</title>
+    <title>ObjectPoolManager Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/CoreFactory" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/ObjectPoolManager" class="dashAnchor"></a>
 
-    <a title="CoreFactory Class Reference"></a>
+    <a title="ObjectPoolManager Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      CoreFactory Class Reference
+      ObjectPoolManager Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -114,17 +114,17 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>CoreFactory</h1>
+            <h1>ObjectPoolManager</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">CoreFactory</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ObjectPoolManager</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>An example of Factory method</p>
+            <p>An example of OBJECT POOL techniques</p>
 
 <ul>
-<li>This is a root Factory, used to manage all common properties or function</li>
+<li>OBJECT POOL create and cached objects, when some thing need it: firstly check the pool have any <q>free</q> object. If not create new one, if existed return the object</li>
 </ul>
 
           </div>
@@ -137,9 +137,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12swiftPattern11CoreFactoryC12createObjectAA0D8ItemBaseCyF"></a>
-                    <a name="//apple_ref/swift/Method/createObject()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12swiftPattern11CoreFactoryC12createObjectAA0D8ItemBaseCyF">createObject()</a>
+                    <a name="/s:12swiftPattern17ObjectPoolManagerC10objectListSayAA0cD4ItemCGv"></a>
+                    <a name="//apple_ref/swift/Property/objectList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12swiftPattern17ObjectPoolManagerC10objectListSayAA0cD4ItemCGv">objectList</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -147,10 +147,37 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Common Factory method for all of the factory</p>
+                        <p>A set of objects that created, it can be hold inside the memory, you can limit the number of items inside set to keep the memory as your expected</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">objectList</span> <span class="o">=</span> <span class="p">[</span><span class="kt"><a href="../Classes/ObjectPoolItem.html">ObjectPoolItem</a></span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12swiftPattern17ObjectPoolManagerC13requestAnItemAA0cdH0CyF"></a>
+                    <a name="//apple_ref/swift/Method/requestAnItem()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12swiftPattern17ObjectPoolManagerC13requestAnItemAA0cdH0CyF">requestAnItem()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Function to get an item from Pool</p>
 
 <ul>
-<li>Return: an object that ready to use in our application, in this case it return an base object FactoryItemBase, not the real FactoryItemBase1 nor FactoryItemBase2</li>
+<li>Return: an instance of object in pool, or an new item</li>
 </ul>
 
                       </div>
@@ -158,7 +185,38 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createObject</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FactoryItemBase.html">FactoryItemBase</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">requestAnItem</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ObjectPoolItem.html">ObjectPoolItem</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12swiftPattern17ObjectPoolManagerC06returnc2ToD0yAA0cD4ItemC6object_tF"></a>
+                    <a name="//apple_ref/swift/Method/returnObjectToPool(object:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12swiftPattern17ObjectPoolManagerC06returnc2ToD0yAA0cD4ItemC6object_tF">returnObjectToPool(object:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Function to return an object back to pool</p>
+
+<ul>
+<li>Return: none</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">returnObjectToPool</span><span class="p">(</span><span class="nv">object</span><span class="p">:</span><span class="kt"><a href="../Classes/ObjectPoolItem.html">ObjectPoolItem</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

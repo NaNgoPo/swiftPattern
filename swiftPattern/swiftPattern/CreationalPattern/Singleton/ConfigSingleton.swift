@@ -2,7 +2,7 @@ import UIKit
 
 /// An example of singleton object
 /// - SINGLETON required an private init() function, to make sure no one can create an instance of this.
-/// - SINGLETON holded current object in a static var, that can be access as class variable, can be use anywhere whiout NEW operator
+/// - SINGLETON holded current object in a static var, that can be access as class variable, can be use anywhere without NEW operator
 ///
 
 class ConfigSingleton: NSObject {

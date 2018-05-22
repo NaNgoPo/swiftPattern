@@ -8,6 +8,27 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/FactoryMethod/Object/FactoryItemBase.swift",
+      "line": 7,
+      "symbol": "FactoryItemBase.uniqueName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/FactoryMethod/Object/FactoryItemBase.swift",
+      "line": 15,
+      "symbol": "FactoryItemBase.setUnique(uniqueString:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/FactoryMethod/Object/FactoryItemBase.swift",
+      "line": 18,
+      "symbol": "FactoryItemBase.printMe()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/CreationalPattern/Singleton/ConfigServerSingleton.swift",
       "line": 13,
       "symbol": "ConfigServerSingleton",
@@ -30,7 +51,7 @@
     },
     {
       "file": "/Users/admin/swiftPattern/swiftPattern/swiftPattern/ViewControllers/MainDemo/DemoViewController.swift",
-      "line": 11,
+      "line": 3,
       "symbol": "DemoViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"

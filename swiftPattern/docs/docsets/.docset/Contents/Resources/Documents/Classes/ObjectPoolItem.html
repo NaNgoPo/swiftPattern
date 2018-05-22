@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CoreFactory Class Reference</title>
+    <title>ObjectPoolItem Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/CoreFactory" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/ObjectPoolItem" class="dashAnchor"></a>
 
-    <a title="CoreFactory Class Reference"></a>
+    <a title="ObjectPoolItem Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      CoreFactory Class Reference
+      ObjectPoolItem Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -114,17 +114,17 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>CoreFactory</h1>
+            <h1>ObjectPoolItem</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">CoreFactory</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ObjectPoolItem</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>An example of Factory method</p>
+            <p>An example of OBJECT POOL techniques</p>
 
 <ul>
-<li>This is a root Factory, used to manage all common properties or function</li>
+<li>OBJECT POOL Item have a special props, that indicated it is in-used or not</li>
 </ul>
 
           </div>
@@ -137,9 +137,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12swiftPattern11CoreFactoryC12createObjectAA0D8ItemBaseCyF"></a>
-                    <a name="//apple_ref/swift/Method/createObject()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12swiftPattern11CoreFactoryC12createObjectAA0D8ItemBaseCyF">createObject()</a>
+                    <a name="/s:12swiftPattern14ObjectPoolItemC06isFreeC0Sbv"></a>
+                    <a name="//apple_ref/swift/Property/isFreeObject" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12swiftPattern14ObjectPoolItemC06isFreeC0Sbv">isFreeObject</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -147,18 +147,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Common Factory method for all of the factory</p>
-
-<ul>
-<li>Return: an object that ready to use in our application, in this case it return an base object FactoryItemBase, not the real FactoryItemBase1 nor FactoryItemBase2</li>
-</ul>
+                        <p>Variable that hold the status of object</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createObject</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/FactoryItemBase.html">FactoryItemBase</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFreeObject</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12swiftPattern14ObjectPoolItemC8uniqueIDSiv"></a>
+                    <a name="//apple_ref/swift/Property/uniqueID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12swiftPattern14ObjectPoolItemC8uniqueIDSiv">uniqueID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Variable that hold unique id of an object, i added it myseft for testing purpose, you can remove from the pattern</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">uniqueID</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span></code></pre>
 
                         </div>
                       </div>

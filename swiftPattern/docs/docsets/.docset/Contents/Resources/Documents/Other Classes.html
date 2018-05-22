@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
            Docs
         </a>
-         (70% documented)
+         (76% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -77,16 +77,22 @@
             <a class="nav-group-name-link" href="Creational Patterns - Factory Method.html">Creational Patterns - Factory Method</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Creational Patterns - Factory Method.html#/c:@M@swiftPattern@objc(cs)FactoryItem1">FactoryItem1</a>
+                <a class="nav-group-task-link" href="Classes/CoreFactory.html">CoreFactory</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Creational Patterns - Factory Method.html#/c:@M@swiftPattern@objc(cs)FactoryItem2">FactoryItem2</a>
+                <a class="nav-group-task-link" href="Classes/Factory1.html">Factory1</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Creational Patterns - Factory Method.html#/c:@M@swiftPattern@objc(cs)Factory1">Factory1</a>
+                <a class="nav-group-task-link" href="Classes/Factory2.html">Factory2</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Creational Patterns - Factory Method.html#/c:@M@swiftPattern@objc(cs)Factory2">Factory2</a>
+                <a class="nav-group-task-link" href="Classes/FactoryItemBase.html">FactoryItemBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FactoryItem1.html">FactoryItem1</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FactoryItem2.html">FactoryItem2</a>
               </li>
             </ul>
           </li>
@@ -94,7 +100,10 @@
             <a class="nav-group-name-link" href="Other Classes.html">Other Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Classes.html#/c:@M@swiftPattern@objc(cs)CoreFactory">CoreFactory</a>
+                <a class="nav-group-task-link" href="Classes/ObjectPoolItem.html">ObjectPoolItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ObjectPoolManager.html">ObjectPoolManager</a>
               </li>
             </ul>
           </li>
@@ -117,9 +126,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@swiftPattern@objc(cs)CoreFactory"></a>
-                    <a name="//apple_ref/swift/Class/CoreFactory" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@swiftPattern@objc(cs)CoreFactory">CoreFactory</a>
+                    <a name="/c:@M@swiftPattern@objc(cs)ObjectPoolManager"></a>
+                    <a name="//apple_ref/swift/Class/ObjectPoolManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@swiftPattern@objc(cs)ObjectPoolManager">ObjectPoolManager</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -127,18 +136,55 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An example of Factory method</p>
+                        <p>An example of OBJECT POOL techniques</p>
 
 <ul>
-<li>This is a root Factory, used to manage all common properties or function</li>
+<li>OBJECT POOL create and cached objects, when some thing need it: firstly check the pool have any <q>free</q> object. If not create new one, if existed return the object</li>
 </ul>
 
+                        <a href="Classes/ObjectPoolManager.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">CoreFactory</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ObjectPoolManager</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@swiftPattern@objc(cs)ObjectPoolItem"></a>
+                    <a name="//apple_ref/swift/Class/ObjectPoolItem" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@swiftPattern@objc(cs)ObjectPoolItem">ObjectPoolItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An example of OBJECT POOL techniques</p>
+
+<ul>
+<li>OBJECT POOL Item have a special props, that indicated it is in-used or not</li>
+</ul>
+
+                        <a href="Classes/ObjectPoolItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ObjectPoolItem</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -153,7 +199,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Na Ngo Po</a>. All rights reserved. (Last updated: 2018-05-21)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Na Ngo Po</a>. All rights reserved. (Last updated: 2018-05-22)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

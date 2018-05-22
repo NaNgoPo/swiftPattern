@@ -1,10 +1,10 @@
 import UIKit
 
 class DemoViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.demoFactoryMethod()
+        self.demoObjectPool()
     }
     func demoSingleton(){
         // [Singleton] example: you can call the function and props
@@ -18,6 +18,7 @@ class DemoViewController: UIViewController {
         self.view.backgroundColor = configObject.getColor()
     }
     func demoFactoryMethod(){
+        // [Factory Method] example: to create all set of object from 2 factory
         let factory1 = Factory1()
         let factory2 = Factory2()
         var listOfItem = [FactoryItemBase]()
@@ -33,9 +34,21 @@ class DemoViewController: UIViewController {
             item.printMe()
         }
     }
+    func demoObjectPool(){
+        // [Object Pool] example: handling object pool with pattern, may apply the singleton for better structure
+        // the value of uniqueid of anItem and existedInPool should be the same!
+        let objectPool = ObjectPoolManager()
+        let anItem = objectPool.requestAnItem()
+        print("[POOL][anItem] item created : \(anItem.uniqueID)")
+        let anotherItem = objectPool.requestAnItem()
+        print("[POOL][anotherItem] item created : \(anotherItem.uniqueID)")
+        objectPool.returnObjectToPool(object: anItem)
+        let existedInPool = objectPool.requestAnItem()
+        print("[POOL][existedInPool] item created : \(existedInPool.uniqueID)")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }

@@ -21,6 +21,10 @@ custom_categories:
     - FactoryItemBase
     - FactoryItem1
     - FactoryItem2
+  - name: Creational Patterns - Object Pool
+    children:
+    - ObjectPoolManager
+    - ObjectPoolItem
     
 
     
