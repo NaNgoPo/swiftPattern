@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840E9BF120B520CD00202CF1 /* PrototypeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E9BF020B520CD00202CF1 /* PrototypeObject.swift */; };
 		8492838720B261820085764F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492838620B261820085764F /* AppDelegate.swift */; };
 		8492838E20B261820085764F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8492838D20B261820085764F /* Assets.xcassets */; };
 		8492839120B261820085764F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8492838F20B261820085764F /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840E9BF020B520CD00202CF1 /* PrototypeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeObject.swift; sourceTree = "<group>"; };
 		8492838320B261820085764F /* swiftPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8492838620B261820085764F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8492838D20B261820085764F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		849283AC20B262970085764F /* ProtoType */ = {
 			isa = PBXGroup;
 			children = (
+				840E9BF020B520CD00202CF1 /* PrototypeObject.swift */,
 			);
 			path = ProtoType;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840E9BF120B520CD00202CF1 /* PrototypeObject.swift in Sources */,
 				849283DE20B3B9DC0085764F /* ObjectPoolManager.swift in Sources */,
 				849283BE20B269650085764F /* ConfigSingleton.swift in Sources */,
 				849283D920B2CE7D0085764F /* Factory2.swift in Sources */,
